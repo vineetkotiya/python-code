@@ -7,7 +7,7 @@ class Mythread(Thread):
 
 t=Mythread()
 t.start()
-
+# t.join(t)
 
 for i in range(10):
     print("My Main Thread")
