@@ -15,22 +15,22 @@ while True:
             3.Add New Student
             4.Exit
     ''')
-    i = input()
+    i = int(input())
     if i == 1:
-        scl_pin = input("Enter School Pin : ")
+        scl_pin = int(input("Enter School Pin : "))
         if scl_pin == 2525:
             for st in stud:
                 Student(**st)
     elif(i == 2):
-        userroll = input("Enter Roll : ")
+        userroll = int(input("Enter Roll : "))
         for obj in stud:
             if userroll == obj["roll"]:
                 Student(**obj)
     elif (i == 3):
         d={}
         roll=int(input("Enter roll :"))
-        name=raw_input("Enter  Name :")
-        address=raw_input("Enter Address :")
+        name=input("Enter  Name :")
+        address=input("Enter Address :")
         print(name)
         d["roll"]=roll
         d["name"]=name
