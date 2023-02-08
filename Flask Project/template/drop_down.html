@@ -1,0 +1,9 @@
+
+<div class="dropdown">
+  <button class="dropbtn">Select Table</button>
+  <div class="dropdown-content">
+      {% for i in db_table_list %}
+    <a href="/{{i}}">{{i}}</a>
+      {% endfor %}
+  </div>
+</div>
